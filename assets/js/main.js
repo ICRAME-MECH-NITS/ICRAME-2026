@@ -153,6 +153,27 @@ function updateVisitorCount() {
     });
 }
 
+window.downloadWithFallback = function(e, primaryUrl, fallbackUrl) {
+  e.preventDefault();
+  fetch(primaryUrl, { method: 'HEAD' })
+    .then(response => {
+      triggerDownload(response.ok ? primaryUrl : fallbackUrl);
+    })
+    .catch(() => {
+      triggerDownload(fallbackUrl);
+    });
+
+  function triggerDownload(url) {
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = '';
+    a.target = '_blank';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  }
+};
+
 async function init() {
   await loadGlobalComponents();
   bindNavbarEvents();
