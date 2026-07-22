@@ -1,66 +1,80 @@
 <section class="page-banner">
   <div class="page-banner-overlay"></div>
   <div class="page-banner-content container">
-    <h1>Speakers</h1>
+    <h1>Keynote Speakers</h1>
     <div class="title-underline"></div>
   </div>
 </section>
 
-<section class="section">
+<section class="section" style="padding-top: 40px; padding-bottom: 80px;">
   <div class="container">
-    <div class="card">
-     <h1>To be updated.....</h1>  
+    <div class="speakers-grid">
+
+      <article class="speaker-card">
+        <img src="../assets/speaker/Dr. Sathiskumar A Ponnusami.png" alt="Dr. Sathiskumar A Ponnusami">
+        <h3>Dr. Sathiskumar A Ponnusami</h3>
+        <p class="role">Senior Lecturer in Engineering AI</p>
+        <p class="affiliation">Queen Mary University of London, UK</p>
+      </article>
+
+      <article class="speaker-card">
+        <img src="../assets/speaker/Dr. Ram Prabhu T.png" alt="Dr. Ram Prabhu T">
+        <h3>Dr. Ram Prabhu T</h3>
+        <p class="role">Additional Director</p>
+        <p class="affiliation">DRDO, India</p>
+      </article>
+
+      <article class="speaker-card">
+        <img src="../assets/speaker/Prof. Dineshkumar Harursampath.png" alt="Prof. Dineshkumar Harursampath">
+        <h3>Prof. Dineshkumar Harursampath</h3>
+        <p class="role">Professor, Department of Aerospace Engineering</p>
+        <p class="affiliation">Indian Institute of Science (IISc), Bangalore</p>
+      </article>
+
+      <article class="speaker-card">
+        <img src="../assets/speaker/Prof. Nguyen Dinh Duc.png" alt="Prof. Nguyen Dinh Duc">
+        <h3>Prof. Nguyen Dinh Duc</h3>
+        <p class="role">Professor</p>
+        <p class="affiliation">Vietnam National University</p>
+      </article>
+
+      <article class="speaker-card">
+        <img src="../assets/speaker/Dr. Vikas Kumar.png" alt="Dr. Vikas Kumar">
+        <h3>Dr. Vikas Kumar</h3>
+        <p class="role">FNAE, Distinguished Scientist (DS) & Former Director</p>
+        <p class="affiliation">DMRL/DRDO, India</p>
+      </article>
+
     </div>
   </div>
 </section>
 
-
-<!-- <section class="section" style="padding-top: 40px; padding-bottom: 80px;">
-  <div class="container">
-    <div class="grid four" style="column-gap: 24px; row-gap: 40px; align-items: start;">
-
-      <article class="speaker-card">
-        <img src="https://via.placeholder.com/300x330.png?text=Dummy+Image" alt="Speaker">
-        <h3><a href="#">Tanusri Saha-Dasgupta</a></h3>
-        <p class="role">Senior Professor and Director</p>
-        <p class="affiliation">S.N. Bose National Centre for<br>Basic Sciences (SNBNCBS),<br>Calcutta, India</p>
-      </article>
-
-      <article class="speaker-card">
-        <img src="https://via.placeholder.com/300x330.png?text=Dummy+Image" alt="Speaker">
-        <h3><a href="#">Udo Schwingenschlögl</a></h3>
-        <p class="role">Professor, Applied Physics<br>Physical Science and Engineering<br>Division</p>
-        <p class="affiliation">King Abdullah University of<br>Science and Technology<br>(KAUST) Solar Center, Saudi<br>Arabia</p>
-      </article>
-
-      <article class="speaker-card">
-        <img src="https://via.placeholder.com/300x330.png?text=Dummy+Image" alt="Speaker">
-        <h3><a href="#">Teck Leong Tan</a></h3>
-        <p class="role">Senior Scientist and Department<br>Director (Materials Science &<br>Chemistry)</p>
-        <p class="affiliation">A*STAR Institute of High<br>Performance Computing (IHPC),<br>Singapore</p>
-      </article>
-
-      <article class="speaker-card">
-        <img src="https://via.placeholder.com/300x330.png?text=Dummy+Image" alt="Speaker">
-        <h3><a href="#">Yun Liu</a></h3>
-        <p class="role">Senior scientist</p>
-        <p class="affiliation">A*STAR Institute of High<br>Performance Computing (IHPC),<br>Singapore</p>
-      </article>
-
-    </div>
-  </div>
-</section> -->
-
 <style>
+  .page-banner {
+    position: relative;
+    /* color: #0b3c5d; */
+    background-image: url('https://res.cloudinary.com/dv7jsvmit/image/upload/v1776622094/image_copy_nmol8z.png'); /* path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
- .page-banner {
-  position: relative;
-  /* color: #0b3c5d; */
-  background-image: url('https://res.cloudinary.com/dv7jsvmit/image/upload/v1776622094/image_copy_nmol8z.png'); /* path to your image */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-} 
+  .speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
 
+  /* Responsive Rules */
+  @media (max-width: 1023px) {
+    .speakers-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 767px) {
+    .speakers-grid {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>
-

@@ -371,43 +371,53 @@ body {
 /* Speaker Cards */
 .speaker-card {
   text-align: center;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.speaker-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .speaker-card img {
-  width: 100%;
-  aspect-ratio: 1;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
-  margin-bottom: 20px;
-  border-radius: 2px;
+  object-position: top center;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  display: block;
 }
 
 .speaker-card h3 {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   font-size: 1.15rem;
-  margin: 0 0 6px;
-}
-
-.speaker-card h3 a {
-  color: #0b5394;
-  text-decoration: underline;
-  font-weight: 600;
+  font-weight: 700;
+  color: #222;
+  margin: 0 0 10px;
 }
 
 .speaker-card .role {
-  font-style: italic;
-  font-size: 0.95rem;
-  margin: 0 0 8px;
-  color: #333;
-  line-height: 1.4;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0 0 5px;
+  line-height: 1.5;
+  font-weight: normal;
 }
 
 .speaker-card .affiliation {
-  font-weight: bold;
-  font-style: italic;
+  font-style: normal;
   font-size: 0.85rem;
+  color: #888;
   margin: 0;
-  color: #111;
   line-height: 1.4;
+  font-weight: normal;
 }
 
 /* About ICRAME Section */
@@ -2251,4 +2261,4 @@ th {
     grid-template-columns: 1fr;
   }
 }
-
+
